@@ -11,9 +11,9 @@ body {
 
 .sandbox {
   background-color: rgb(243, 234, 214);
-  width: 600px;
-  height: 600px;
   border: #272727 solid 1px;
   border-radius: 0.5rem;
   margin: 1rem 0;
+  /* width: 600px; */
+  /* height: 600px; */
 }
