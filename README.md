@@ -11,13 +11,17 @@
 ### Quick Start with Canvas-Sketch:
 
 _Make a new folder to hold all your generative sketches_
-mkdir my-sketches
+
+- `mkdir my-sketches`
 
 _Move into that folder_
-cd my-sketches
+
+- `cd my-sketches`
 
 _Scaffold a new sketch file and open the browser_
-npx canvas-sketch-cli --new --open
+
+- `npx canvas-sketch-cli --new --open`
 
 _If error! :_
-npm install canvas-sketch -or- sudo npm install canvas-sketch
+
+- `npm install canvas-sketch -or- sudo npm install canvas-sketch`
