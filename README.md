@@ -25,3 +25,7 @@ _Scaffold a new sketch file and open the browser_
 _If error! :_
 
 - `npm install canvas-sketch -or- sudo npm install canvas-sketch`
+
+_Creating a new Canvas-Sketch file/template_
+
+- `canvas-sketch SKETCH-NAME.js --new`
