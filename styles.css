@@ -10,8 +10,8 @@ body {
 }
 
 .sandbox {
-  background-color: rgb(243, 234, 214);
-  border: #272727 solid 1px;
+  background-color: #ff4400;
+  border: #ffd58d solid 4px;
   border-radius: 0.5rem;
   margin: 1rem 0;
   /* width: 600px; */

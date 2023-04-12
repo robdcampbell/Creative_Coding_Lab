@@ -36,10 +36,10 @@ for (let i = 0; i < 5; i++) {
 
     if (Math.random() > 0.5) {
       context.beginPath();
-      //   context.fillStyle = "#232323";
-      //   context.fillRect(x + 8, y + 8, width - 16, height - 16);
-      context.rect(x + 8, y + 8, width - 16, height - 16);
-      context.stroke();
+      context.fillStyle = "#ffff88";
+      context.fillRect(x + 8, y + 8, width - 16, height - 16);
+      // context.rect(x + 8, y + 8, width - 16, height - 16);
+      // context.stroke();
     }
 
     // context.beginPath();
