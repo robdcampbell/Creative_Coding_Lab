@@ -1,7 +1,7 @@
 import canvasSketch from "canvas-sketch";
 
 const settings = {
-  dimensions: [600, 600],
+  dimensions: [1080, 1080],
 };
 
 const sketch = () => {
@@ -9,15 +9,20 @@ const sketch = () => {
     context.fillStyle = "#ff4411";
     // context.fillStyle = "#fff";
     context.fillRect(0, 0, width, height);
+    context.lineWidth = width * 0.01;
 
-    const w = 60;
-    const h = 60;
-    const gap = 20;
+    const w = width * 0.1;
+    const h = height * 0.1;
+    const gap = width * 0.03;
+    let ix = width * 0.17;
+    let iy = height * 0.17;
+    let x, y;
+    let off = width * 0.03;
 
     for (let i = 0; i < 5; i++) {
       for (let j = 0; j < 5; j++) {
-        let x = 100 + (w + gap) * i;
-        let y = 100 + (h + gap) * j;
+        x = ix + (w + gap) * i;
+        y = iy + (h + gap) * j;
 
         context.beginPath();
         context.rect(x, y, w, h);
@@ -25,10 +30,10 @@ const sketch = () => {
 
         if (Math.random() > 0.5) {
           context.beginPath();
-          context.fillStyle = "#ffff88";
-          context.fillRect(x + 8, y + 8, w - 16, h - 16);
-          // context.rect(x + 8, y + 8, w - 16, h - 16);
-          // context.stroke();
+          // context.fillStyle = "#ffff88";
+          // context.fillRect(x + off / 2, y + off / 2, w - off / 2, h - off / 2);
+          context.rect(x + off / 2, y + off / 2, w - off, h - off);
+          context.stroke();
         }
 
         // context.beginPath();
